@@ -1,7 +1,7 @@
 {
 	"name": "clocks",
 	"short_name": "clocks",
-	description: "An app that show some predefined clocks by timezone.",
+	"description": "An app that show some predefined clocks by timezone.",
 	"icons": [
 		{
 			"src": "/clocks/pwa-64x64.png",
@@ -22,13 +22,13 @@
 			"purpose": "any"
 		},
 		{
-			"src": "/clocks/apple-touch-icon-180x180.png",
+			"src": "/clocks/apple-icon-192.maskable.png",
 			"sizes": "180x180",
 			"type": "image/png",
 			"purpose": "any"
 		},
 		{
-			"src": "/clocks/maskable-icon-512x512.png",
+			"src": "/clocks/maskable-icon-512.maskable.png",
 			"sizes": "512x512",
 			"type": "image/png",
 			"purpose": "maskable"
