@@ -1,0 +1,43 @@
+{
+	"name": "clocks",
+	"short_name": "clocks",
+	description: "An app that show some predefined clocks by timezone.",
+	"icons": [
+		{
+			"src": "/clocks/pwa-64x64.png",
+			"sizes": "64x64",
+			"type": "image/png",
+			"purpose": "monochrome"
+		},
+		{
+			"src": "/clocks/pwa-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "monochrome"
+		},
+		{
+			"src": "/clocks/pwa-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "/clocks/apple-touch-icon-180x180.png",
+			"sizes": "180x180",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "/clocks/maskable-icon-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "maskable"
+		}
+	],
+	"theme_color": "#171717",
+	"background_color": "#e8ebf2",
+	"display": "standalone",
+	"scope": "/clocks/",
+	"start_url": "/clocks/",
+	"orientation": "portrait"
+}
