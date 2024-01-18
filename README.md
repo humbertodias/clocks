@@ -1,4 +1,4 @@
-# react-timezone-clocks
+# Clocks
 
 It's a react application with some analog clocks with predefined timezone
 
@@ -7,7 +7,7 @@ It's a react application with some analog clocks with predefined timezone
   
 # Test
 
-Access [humbertodias.github.io/react-timezone-clocks](https://humbertodias.github.io/react-timezone-clocks) and install in your desktop
+Access [humbertodias.github.io/clocks](https://humbertodias.github.io/clocks) and install in your desktop
 
 <img width="1250" alt="image" src="https://github.com/humbertodias/react-timezone-clocks/assets/9255997/28040613-e30b-47e7-8c79-c581ac4c2f82">
 
