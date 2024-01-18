@@ -1,10 +1,25 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./Home.tsx";
+import App from "./App.tsx";
+// import "./index.css";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+const routes = [
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      { path: "/", element: <Home /> },
+    ],
+  },
+]
+const router = createBrowserRouter( routes
+  , { basename: import.meta.env.MODE == 'gh-pages' ? '/clocks/' : '/' } 
+  );
+
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <RouterProvider router={router}></RouterProvider>
+  </React.StrictMode>
+);
