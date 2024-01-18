@@ -4,26 +4,26 @@
 	"description": "An app that show some predefined clocks by timezone.",
 	"icons": [
 		{
-			"src": "/clocks/pwa-64x64.png",
+			"src": "/clocks/pwa-64.png",
 			"sizes": "64x64",
 			"type": "image/png",
 			"purpose": "monochrome"
 		},
 		{
-			"src": "/clocks/pwa-192x192.png",
+			"src": "/clocks/pwa-192.png",
 			"sizes": "192x192",
 			"type": "image/png",
 			"purpose": "monochrome"
 		},
 		{
-			"src": "/clocks/pwa-512x512.png",
+			"src": "/clocks/pwa-512.png",
 			"sizes": "512x512",
 			"type": "image/png",
 			"purpose": "any"
 		},
 		{
 			"src": "/clocks/apple-icon-192.maskable.png",
-			"sizes": "180x180",
+			"sizes": "192x192",
 			"type": "image/png",
 			"purpose": "any"
 		},
