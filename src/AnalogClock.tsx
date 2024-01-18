@@ -38,8 +38,8 @@ const AnalogClock: React.FC<AnalogClockProps> = ({
   };
 
   const renderClockHands = () => {
-    let dateTimeZoneStr = time.toLocaleString("en-US", { timeZone: timezone });
-    let dateTimeZone = new Date(dateTimeZoneStr);
+    const dateTimeZoneStr = time.toLocaleString("en-US", { timeZone: timezone });
+    const dateTimeZone = new Date(dateTimeZoneStr);
 
     const hours = dateTimeZone.getHours() % 12;
     const minutes = dateTimeZone.getMinutes();
@@ -157,7 +157,7 @@ const AnalogClock: React.FC<AnalogClockProps> = ({
   }
 
   return (
-    <div>
+    <div title={timezone}>
       <svg width={size} height={size} xmlns="http://www.w3.org/2000/svg">
         {/* Background */}
         <rect x="0" y="0" width={size} height={size} fill="#fff" />

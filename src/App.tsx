@@ -12,19 +12,15 @@ function App() {
   // const timezones = Intl.supportedValuesOf('timeZone');
 
   return (
-    <>
       <div>
         <h1>The World Clock</h1>
         <div className="card">
           <GridClocks size={300} timezones={timezones} />
         </div>
         <div className="read-the-docs">
-          <a href={"https://github.com/humbertodias/react-timezone-clocks/commit/" + import.meta.env.VITE_APP_VERSION}>
-            {import.meta.env.VITE_APP_VERSION}
-          </a>
+          <a target="_blank" href={`https://github.com/humbertodias/react-timezone-clocks/commit/${import.meta.env.VITE_APP_VERSION}`}>{import.meta.env.VITE_APP_VERSION}</a>
         </div>
       </div>
-    </>
   );
 }
 
