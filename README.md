@@ -3,7 +3,7 @@
 It's a react application with some analog clocks with predefined timezone
 
 ### Features
-* [ ] PWA with mobile support
+* [x] PWA with mobile support
   
 # Test
 
