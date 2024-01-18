@@ -9,7 +9,8 @@ It's a react application with some analog clocks with predefined timezone
 
 Access [humbertodias.github.io/react-timezone-clocks](https://humbertodias.github.io/react-timezone-clocks) and install in your desktop
 
-<img width="1058" alt="imagen" src="https://github.com/humbertodias/aws-quiz/assets/9255997/38be0897-3ca4-464d-a7ec-15fa8ee9c215">
+<img width="1250" alt="image" src="https://github.com/humbertodias/react-timezone-clocks/assets/9255997/28040613-e30b-47e7-8c79-c581ac4c2f82">
+
 
 For your mobile phone, just click on **Add react-timezone-clocks to Home Screen** notification or **... > Install App**
 
