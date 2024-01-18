@@ -30,7 +30,7 @@ function Home() {
             Flag.getFlagTimeZone(option) + " " + option
           }
           disableCloseOnSelect
-          onChange={(event, newValue) => setSelectedOptions(newValue)}
+          onChange={(_, newValue) => setSelectedOptions(newValue)}
           value={selectedOptions}
           isOptionEqualToValue={(option, value) => option === value}
           renderOption={(props, option, { selected }) => (
