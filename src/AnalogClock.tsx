@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import moment from "moment-timezone";
+import { getCountryForTimezone } from 'countries-and-timezones';
 
 interface AnalogClockProps {
   size?: number;
@@ -136,20 +136,10 @@ const AnalogClock: React.FC<AnalogClockProps> = ({
   };
 
   const getCountryCode = (timezone: string) => {
-    const zone = moment.tz.zone(timezone);
-
-    if (!zone) {
-      return null; // Invalid timezone
-    }
-
-    const country = zone.countries()[0];
-
-    if (!country) {
-      return null; // No associated country
-    }
-
-    return country;
+    const country = getCountryForTimezone(timezone);
+    return country ? country.id : '';
   };
+
 
   function getCountryFlagEmoji(countryCode: string) {
     if (!countryCode) {
