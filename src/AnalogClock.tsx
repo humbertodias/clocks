@@ -158,11 +158,6 @@ const AnalogClock: React.FC<AnalogClockProps> = ({
 
   return (
     <div title={timezone}>
-      <div style={{ fontSize: "24px", marginTop: "10px" }}>{countryFlag}</div>
-      <div>
-        {timezone}
-      </div>
-
       <svg width={size} height={size} xmlns="http://www.w3.org/2000/svg">
         {/* Background */}
         <rect x="0" y="0" width={size} height={size} fill="#fff" />
@@ -191,6 +186,10 @@ const AnalogClock: React.FC<AnalogClockProps> = ({
           fill={isNight() ? "#fff" : "#333"}
         />
       </svg>
+      <div style={{ fontSize: "24px", marginTop: "10px" }}>{countryFlag}</div>
+      <div>
+        {timezone}
+      </div>
       <div>
       {time.toLocaleString("en-US", { timeZone: timezone })}
       </div>
