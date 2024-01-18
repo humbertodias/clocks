@@ -7,9 +7,12 @@ function Home() {
     "America/Sao_Paulo",
     "America/New_York",
     "Europe/London",
+    "Europe/Madrid",
+    "Europe/Dublin",
   ];
-  // const timezones = Intl.supportedValuesOf('timeZone');
-
+  // const timezonesList = Intl.supportedValuesOf('timeZone');
+  // console.log(timezonesList);
+  
   return (
       <div>
         <h1>The World Clock</h1>
