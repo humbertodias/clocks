@@ -22,13 +22,13 @@
 			"purpose": "any"
 		},
 		{
-			"src": "/clocks/maskable-icon-192.maskable.png",
+			"src": "/clocks/manifest-icon-192.maskable.png",
 			"sizes": "192x192",
 			"type": "image/png",
 			"purpose": "any"
 		},
 		{
-			"src": "/clocks/maskable-icon-512.maskable.png",
+			"src": "/clocks/manifest-icon-512.maskable.png",
 			"sizes": "512x512",
 			"type": "image/png",
 			"purpose": "maskable"
