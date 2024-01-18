@@ -1,25 +1,27 @@
 import React, { useEffect, useState } from "react";
-import { getCountryForTimezone } from 'countries-and-timezones';
 
 interface AnalogClockProps {
   size?: number;
   timezone?: string;
+  flag?:string;
 }
 
 const AnalogClock: React.FC<AnalogClockProps> = ({
   size = 200,
   timezone = "America/New_York",
+  flag = "🌐",
 }) => {
   const [time, setTime] = useState(new Date());
-  const [countryFlag, setCountryFlag] = useState("");
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setTime(new Date());
     }, 1000);
 
-    updateCountryFlag(); // Initial update
-    return () => clearInterval(intervalId);
+    return () => {
+      console.log('Component will unmount');
+      clearInterval(intervalId);
+      }
   }, []);
 
   const isNight = () => {
@@ -130,36 +132,10 @@ const AnalogClock: React.FC<AnalogClockProps> = ({
     });
   };
 
-  const updateCountryFlag = () => {
-    const countryCode = getCountryCode(timezone);
-    setCountryFlag(getCountryFlagEmoji(countryCode));
-  };
-
-  const getCountryCode = (timezone: string) => {
-    const country = getCountryForTimezone(timezone);
-    return country ? country.id : '';
-  };
-
-
-  function getCountryFlagEmoji(countryCode: string) {
-    if (!countryCode) {
-      return "🌐";
-    }
-
-    const base = 127397; // Unicode code point for regional indicator symbol letter A
-
-    const countryLetters = countryCode
-      .toUpperCase()
-      .split("")
-      .map((char) => String.fromCodePoint(base + char.charCodeAt(0)));
-
-    return countryLetters.join("");
-  }
-
   return (
     <div title={timezone}>
-      <div style={{ fontSize: "24px", marginTop: "10px" }}>{countryFlag}</div>
-      <div>
+      {<div style={{ fontSize: "24px", marginTop: "10px" }}>{flag}</div> }
+      <div style={{ marginTop: "10px" }}>
         {timezone}
       </div>
       <svg width={size} height={size} xmlns="http://www.w3.org/2000/svg">
