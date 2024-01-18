@@ -14,7 +14,7 @@ Access [humbertodias.github.io/clocks](https://humbertodias.github.io/clocks) an
 
 For your mobile phone, just click on **Add clocks to Home Screen** notification or **... > Install App**
 
-![image](https://github.com/humbertodias/clocks/assets/9255997/d6a34fbb-7586-41f3-8b61-58d04982b2fa)
+<img width="450" alt="image" src="https://github.com/humbertodias/clocks/assets/9255997/d6a34fbb-7586-41f3-8b61-58d04982b2fa">
 
 
 # Ref
