@@ -45,6 +45,7 @@ function Home() {
         />
         <GridClocks size={300} timezones={selectedOptions} />
       </div>
+      <br />
       <div className="read-the-docs">
         <a
           target="_blank"

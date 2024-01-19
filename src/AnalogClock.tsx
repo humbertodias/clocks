@@ -18,10 +18,7 @@ const AnalogClock: React.FC<AnalogClockProps> = ({
       setTime(new Date());
     }, 1000);
 
-    return () => {
-      console.log('Component will unmount');
-      clearInterval(intervalId);
-      }
+    return () => clearInterval(intervalId);
   }, []);
 
   const isNight = () => {
@@ -136,7 +133,7 @@ const AnalogClock: React.FC<AnalogClockProps> = ({
     <div title={timezone}>
       {<div style={{ fontSize: "24px", marginTop: "10px" }}>{flag}</div> }
       <div style={{ marginTop: "10px" }}>
-        {timezone}
+      {timezone}
       </div>
       <svg width={size} height={size} xmlns="http://www.w3.org/2000/svg">
         {/* Background */}
