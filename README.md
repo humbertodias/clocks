@@ -1,3 +1,5 @@
+[![Deploy static content to Pages](https://github.com/humbertodias/clocks/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/humbertodias/clocks/actions/workflows/gh-pages.yml)
+
 # Clocks
 
 It's a react application with some analog clocks with predefined timezone
